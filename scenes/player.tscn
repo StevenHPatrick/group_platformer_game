@@ -1,11 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://1x6s1xnjkl70"]
+[gd_scene load_steps=9 format=3 uid="uid://1x6s1xnjkl70"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_nqbsb"]
+[ext_resource type="Script" path="res://scripts/player/player.gd" id="1_nqbsb"]
 [ext_resource type="Texture2D" uid="uid://cgm4jcungo3xo" path="res://assests/icon.svg" id="2_nc3wu"]
+[ext_resource type="Script" path="res://scripts/states/state_machine.gd" id="3_c7bat"]
+[ext_resource type="Script" path="res://scripts/states/player/player_idle.gd" id="4_l1pp3"]
+[ext_resource type="Script" path="res://scripts/states/player/player_running.gd" id="5_o0dkt"]
+[ext_resource type="Script" path="res://scripts/states/player/player_jumping.gd" id="6_3doy8"]
+[ext_resource type="Script" path="res://scripts/states/player/player_falling.gd" id="7_68ynd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qnrl1"]
 
-[node name="player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_nqbsb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -16,4 +21,17 @@ shape = SubResource("RectangleShape2D_qnrl1")
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("2_nc3wu")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="State Machine" type="Node" parent="."]
+script = ExtResource("3_c7bat")
+
+[node name="Idle" type="Node" parent="State Machine"]
+script = ExtResource("4_l1pp3")
+
+[node name="Running" type="Node" parent="State Machine"]
+script = ExtResource("5_o0dkt")
+
+[node name="Jumping" type="Node" parent="State Machine"]
+script = ExtResource("6_3doy8")
+
+[node name="Falling" type="Node" parent="State Machine"]
+script = ExtResource("7_68ynd")
