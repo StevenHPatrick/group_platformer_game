@@ -1,4 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< Updated upstream
 ::res://::1728955520
 README.md::TextFile::-1::1728954766::0::1::::<><>::
 ::res://assests/::1728954766
@@ -9,3 +10,25 @@ player.tscn::PackedScene::1874306395738965061::1728954766::0::1::::<><>::res://s
 world.tscn::PackedScene::6049126074187564155::1728954766::0::1::::<><>::uid://1x6s1xnjkl70::::res://scenes/player.tscn<>uid://c75dy55ol7i83::::res://scenes/platform.tscn
 ::res://scripts/::1728954766
 player.gd::GDScript::-1::1728954766::0::1::::<>CharacterBody2D<>::
+=======
+::res://::1729445239
+README.md::TextFile::-1::1728954766::0::1::::<><>::
+::res://assests/::1729442728
+icon.svg::CompressedTexture2D::5220523963740535804::1728954766::1729445241::1::::<><>::
+::res://scenes/::1729445201
+platform.tscn::PackedScene::7081042329153749134::1728954766::0::1::::<><>::uid://cgm4jcungo3xo::::res://assests/icon.svg
+player.tscn::PackedScene::1874306395738965061::1729445201::0::1::::<><>::res://scripts/player/player.gd<>uid://cgm4jcungo3xo::::res://assests/icon.svg<>res://scripts/states/state_machine.gd<>res://scripts/states/player/player_idle.gd<>res://scripts/states/player/player_running.gd<>res://scripts/states/player/player_jumping.gd<>res://scripts/states/player/player_falling.gd
+world.tscn::PackedScene::6049126074187564155::1729442728::0::1::::<><>::uid://1x6s1xnjkl70::::res://scenes/player.tscn<>uid://c75dy55ol7i83::::res://scenes/platform.tscn
+::res://scripts/::1729445201
+::res://scripts/player/::1729445201
+player.gd::GDScript::-1::1729445201::0::1::::Player<>CharacterBody2D<>::
+::res://scripts/states/::1729445201
+state.gd::GDScript::-1::1729445201::0::1::::State<>Node<>::
+state_machine.gd::GDScript::-1::1729445201::0::1::::State_Machine<>Node<>::
+::res://scripts/states/player/::1729445201
+player_falling.gd::GDScript::-1::1729445201::0::1::::<>PlayerState<>::
+player_idle.gd::GDScript::-1::1729445201::0::1::::<>PlayerState<>::
+player_jumping.gd::GDScript::-1::1729445201::0::1::::<>PlayerState<>::
+player_running.gd::GDScript::-1::1729445201::0::1::::<>PlayerState<>::
+player_state.gd::GDScript::-1::1729445201::0::1::::PlayerState<>State<>::
+>>>>>>> Stashed changes
