@@ -3,7 +3,7 @@ extends PlayerState
 func enter(previous_state_path: String, entity_data := {}) -> void:
 	player.velocity.x = 0.0
 	print("IN IDLE")
-	#player.amimation_player.play("idle")
+	player.get_node("AnimationPlayer").play("idle")
 	
 func process_physics(delta: float) -> void:
 	player.velocity.y += player.gravity * delta
