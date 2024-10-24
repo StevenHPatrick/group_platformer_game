@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://1x6s1xnjkl70"]
+[gd_scene load_steps=10 format=3 uid="uid://1x6s1xnjkl70"]
 
 [ext_resource type="Script" path="res://scripts/player/player.gd" id="1_nqbsb"]
 [ext_resource type="Texture2D" uid="uid://cgm4jcungo3xo" path="res://assests/icon.svg" id="2_nc3wu"]
 [ext_resource type="Script" path="res://scripts/states/state_machine.gd" id="3_c7bat"]
+[ext_resource type="Script" path="res://scripts/player/wall_detect_controller.gd" id="3_kolxx"]
 [ext_resource type="Script" path="res://scripts/states/player/player_idle.gd" id="4_l1pp3"]
 [ext_resource type="Script" path="res://scripts/states/player/player_running.gd" id="5_o0dkt"]
 [ext_resource type="Script" path="res://scripts/states/player/player_jumping.gd" id="6_3doy8"]
@@ -20,6 +21,29 @@ shape = SubResource("RectangleShape2D_qnrl1")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("2_nc3wu")
+
+[node name="Wall_Detection" type="Node" parent="Sprite2D"]
+script = ExtResource("3_kolxx")
+
+[node name="RayCast2D_Top" type="RayCast2D" parent="Sprite2D/Wall_Detection"]
+position = Vector2(16, -16)
+exclude_parent = false
+target_position = Vector2(1, 0)
+collision_mask = 3
+collide_with_areas = true
+
+[node name="RayCast2D_Middle" type="RayCast2D" parent="Sprite2D/Wall_Detection"]
+position = Vector2(16, 0)
+exclude_parent = false
+target_position = Vector2(1, 0)
+collision_mask = 3
+
+[node name="RayCast2D_Bottom" type="RayCast2D" parent="Sprite2D/Wall_Detection"]
+position = Vector2(16, 16)
+exclude_parent = false
+target_position = Vector2(1, 0)
+collision_mask = 3
+collide_with_areas = true
 
 [node name="State Machine" type="Node" parent="."]
 script = ExtResource("3_c7bat")
