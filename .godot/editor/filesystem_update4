@@ -1,8 +1,0 @@
-res://scripts/player/wall_detect_controller.gd
-res://scenes/platform_sticky.tscn
-res://scripts/player/wall_detect_raycasts.gd
-res://scenes/player.tscn
-res://scenes/world.tscn
-res://scenes/platform.tscn
-res://scenes/wall_detection.tscn
-res://scenes/ray_cast_2d_middle.gd
