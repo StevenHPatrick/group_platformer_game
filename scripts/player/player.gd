@@ -4,7 +4,10 @@ class_name Player extends CharacterBody2D
 @export var speed = 300.0
 @export var jump_velocity = -400.0
 @export var gravity = 980
-@export var drag = 10
+@export var drag = 250.0
+var direction = 1
+@onready var sprite = $Sprite2D
+
 
 #func _physics_process(delta: float) -> void:
 	## Add the gravity.

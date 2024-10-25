@@ -5,18 +5,18 @@
 
 [node name="world" type="Node2D"]
 
-[node name="player" parent="." instance=ExtResource("1_wolrt")]
-position = Vector2(378, 364)
+[node name="Player" parent="." instance=ExtResource("1_wolrt")]
+platform_wall_layers = 3
 
 [node name="platform" parent="." instance=ExtResource("2_fkq3r")]
 position = Vector2(561, 681)
 scale = Vector2(10, 1)
 
 [node name="platform2" parent="." instance=ExtResource("2_fkq3r")]
-position = Vector2(668, 612)
+position = Vector2(678, 564)
 
 [node name="platform3" parent="." instance=ExtResource("2_fkq3r")]
-position = Vector2(776, 570)
+position = Vector2(456, 562)
 
 [node name="platform4" parent="." instance=ExtResource("2_fkq3r")]
-position = Vector2(884, 464)
+position = Vector2(361, 606)

@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhpcxr5xsaaga"]
+
+[ext_resource type="Script" path="res://scripts/player/wall_detect_controller.gd" id="1_uyum3"]
+
+[node name="Wall_Detection" type="Node"]
+script = ExtResource("1_uyum3")
+
+[node name="RayCast2D_Top" type="RayCast2D" parent="."]
+position = Vector2(0, -16)
+target_position = Vector2(18, 0)
+collision_mask = 3
+hit_from_inside = true
+collide_with_areas = true
+
+[node name="RayCast2D_Middle" type="RayCast2D" parent="."]
+target_position = Vector2(17, 0)
+collision_mask = 3
+hit_from_inside = true
+
+[node name="RayCast2D_Bottom" type="RayCast2D" parent="."]
+position = Vector2(0, 16)
+target_position = Vector2(17, 0)
+collision_mask = 3
+hit_from_inside = true
