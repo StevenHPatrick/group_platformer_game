@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 @onready var top_ray: Object = $RayCast2D_Top
 @onready var mid_ray: Object = $RayCast2D_Middle
@@ -11,18 +11,14 @@ func _ready() -> void:
 	raycast_dict = {top_ray: null, mid_ray: null, bot_ray: null}
 
 func _physics_process(_delta: float) -> void:
-	var temp = mid_ray.get_collider()
-	if temp != null:
-		print("WTF, something happened!!.....")
-	
-	for ray in raycast_dict:
 
+	for ray in raycast_dict:
 		var last_collider = raycast_dict[ray]
 		if not ray.is_colliding():
 			#print(ray.to_string() + " is not colliding")
 			raycast_dict[ray] = null
 			continue
-		print("is raycast working")
+
 		var found_collider:Object = ray.get_collider()
 		if found_collider != last_collider:
 			last_collider = found_collider
