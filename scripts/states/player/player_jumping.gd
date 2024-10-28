@@ -3,7 +3,7 @@ extends PlayerState
 func enter(previous_state_path: String, data := {}) -> void:
 	player.velocity.y = player.jump_velocity
 	print("IN JUMPING")
-	player.get_node("AnimationPlayer").play("jump")
+	# player.get_node("AnimationPlayer").play("jump")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func process_physics(delta: float) -> void:

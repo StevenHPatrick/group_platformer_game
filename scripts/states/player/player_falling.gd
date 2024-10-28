@@ -3,7 +3,7 @@ extends PlayerState
 func enter(previous_state_path: String, data := {}) -> void:
 	print("IN FALLING")
 	pass
-	player.get_node("AnimationPlayer").play("fall")
+	# player.get_node("AnimationPlayer").play("fall")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func process_physics(delta: float) -> void:
