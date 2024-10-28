@@ -22,26 +22,26 @@ shape = SubResource("RectangleShape2D_qnrl1")
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("2_nc3wu")
 
-[node name="Wall_Detection" type="Node" parent="Sprite2D"]
+[node name="Wall_Detection" type="Node2D" parent="Sprite2D"]
+visible = false
 script = ExtResource("3_kolxx")
 
 [node name="RayCast2D_Top" type="RayCast2D" parent="Sprite2D/Wall_Detection"]
-position = Vector2(16, -16)
+position = Vector2(0, -64)
 exclude_parent = false
-target_position = Vector2(1, 0)
+target_position = Vector2(68, 0)
 collision_mask = 3
 collide_with_areas = true
 
 [node name="RayCast2D_Middle" type="RayCast2D" parent="Sprite2D/Wall_Detection"]
-position = Vector2(16, 0)
 exclude_parent = false
-target_position = Vector2(1, 0)
+target_position = Vector2(68, 0)
 collision_mask = 3
 
 [node name="RayCast2D_Bottom" type="RayCast2D" parent="Sprite2D/Wall_Detection"]
-position = Vector2(16, 16)
+position = Vector2(0, 60)
 exclude_parent = false
-target_position = Vector2(1, 0)
+target_position = Vector2(68, 0)
 collision_mask = 3
 collide_with_areas = true
 
