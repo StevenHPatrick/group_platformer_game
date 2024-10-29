@@ -2,6 +2,7 @@ extends PlayerState
 
 
 func enter(previous_state_path: String, entity_data := {}):
+	player.on_wall = false
 	print("IN RUN")
 	pass
 	#player.amimation_player.play("run")
@@ -16,7 +17,7 @@ func process_physics(delta: float) -> void:
 		elif player.sprite.scale.x > 0 and player.direction == -1:
 			player.sprite.scale.x = player.sprite.scale.x * -1
 			print("facing right")
-	player.velocity.x = player.speed * input_direction_x
+	player.velocity.x = player.speed * player.direction
 	player.velocity.y += player.gravity * delta
 	player.move_and_slide()
 	

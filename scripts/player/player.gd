@@ -4,7 +4,7 @@ class_name Player extends CharacterBody2D
 @export var speed = 300.0
 @export var jump_velocity = -400.0
 @export var gravity = 980
-@export var drag = 250.0
+@export var on_wall = false
 var direction = 1
 @onready var sprite = $Sprite2D
 
