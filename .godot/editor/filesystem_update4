@@ -1,8 +1,15 @@
 res://scenes/player.tscn
+<<<<<<< HEAD
+=======
+res://scripts/player/wall_detect_controller.gd
+res://scripts/states/player/player_jumping.gd
+res://scripts/states/player/player_falling.gd
+>>>>>>> player-controller
 res://scenes/platform.tscn
 res://scenes/platform_sticky.tscn
 res://scenes/world.tscn
 res://scenes/wall_detection.tscn
+<<<<<<< HEAD
 res://scripts/states/player/player_idle.gd
 res://scripts/states/player/player_falling.gd
 res://scripts/states/player/player_jumping.gd
@@ -10,3 +17,7 @@ res://scripts/states/player/player_running.gd
 res://scenes/enemies/AirElemental.tscn
 res://scenes/enemies/SeaElemental.tscn
 res://scenes/enemies/LandElemental.tscn
+=======
+res://scripts/player/player.gd
+res://scripts/states/player/player_running.gd
+>>>>>>> player-controller

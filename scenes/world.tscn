@@ -6,6 +6,7 @@
 [node name="world" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_wolrt")]
+position = Vector2(184, 540)
 platform_wall_layers = 3
 
 [node name="platform" parent="." instance=ExtResource("2_fkq3r")]
@@ -13,10 +14,10 @@ position = Vector2(561, 681)
 scale = Vector2(10, 1)
 
 [node name="platform2" parent="." instance=ExtResource("2_fkq3r")]
-position = Vector2(678, 564)
+position = Vector2(676, 621)
 
 [node name="platform3" parent="." instance=ExtResource("2_fkq3r")]
 position = Vector2(456, 562)
 
 [node name="platform4" parent="." instance=ExtResource("2_fkq3r")]
-position = Vector2(361, 606)
+position = Vector2(353, 621)
