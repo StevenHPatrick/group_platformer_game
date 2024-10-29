@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8gn8xysyq7ku"
-path="res://.godot/imported/hit.png-1ae1933e9fffa0c8a8f4ab59fc7d9e51.ctex"
+uid="uid://boaao4ap01peu"
+path="res://.godot/imported/swallow.png-8c9b5d3906af41c3bc76094893f21e86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assests/player/hit.png"
-dest_files=["res://.godot/imported/hit.png-1ae1933e9fffa0c8a8f4ab59fc7d9e51.ctex"]
+source_file="res://assests/player/spritesheets/swallow.png"
+dest_files=["res://.godot/imported/swallow.png-8c9b5d3906af41c3bc76094893f21e86.ctex"]
 
 [params]
 
