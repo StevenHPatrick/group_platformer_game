@@ -64,4 +64,6 @@ script = ExtResource("6_3doy8")
 [node name="Falling" type="Node" parent="State Machine"]
 script = ExtResource("7_68ynd")
 
+[node name="Stick_To_Wall" type="Node" parent="State Machine"]
+
 [connection signal="timeout" from="Sprite2D/Wall_Detection/Timer" to="Sprite2D/Wall_Detection" method="_on_timer_timeout"]
