@@ -15,6 +15,16 @@ run/main_scene="res://scenes/world.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://assests/icon.svg"
 
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=320
+
+[layer_names]
+
+2d_physics/size/viewport_height=320
+2d_physics/size/viewport_width=640
+
 [rendering]
 
 renderer/rendering_method="mobile"

@@ -1,2 +1,3 @@
-res://assests/player/animation.tscn
-res://assests/player/animated_sprite.tscn
+res://scenes/world.tscn
+res://assests/temp tilesets/temp_tile_resource.tres
+res://scenes/player.tscn
