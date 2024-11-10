@@ -8,6 +8,8 @@ func enter(previous_state_path: String, entity_data := {}):
 	# player.get_node("AnimationPlayer").play("run")
 	
 func process_physics(delta: float) -> void:
+	
+	##### Allows for moving in the air #####
 	var input_direction_x := Input.get_axis("ui_left", "ui_right")
 	if input_direction_x != 0:
 		player.direction = input_direction_x
@@ -17,6 +19,8 @@ func process_physics(delta: float) -> void:
 		elif player.sprite.scale.x > 0 and player.direction == -1:
 			player.sprite.scale.x = player.sprite.scale.x * -1
 			print("facing right")
+			
+	####### Updates the velocity ######
 	player.velocity.x = player.speed * player.direction
 	player.velocity.y += player.gravity * delta
 	player.move_and_slide()

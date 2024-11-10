@@ -10,6 +10,7 @@ func enter(previous_state_path: String, data := {}) -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func process_physics(delta: float) -> void:
+	##### Allows for moving in the air #####
 	var input_direction_x := Input.get_axis("ui_left", "ui_right")
 	if input_direction_x != 0:
 		player.direction = input_direction_x
@@ -35,7 +36,7 @@ func process_physics(delta: float) -> void:
 			#player.sprite.scale.x = player.sprite.scale.x * -1
 			#print("facing right")
 		#bounce = false
-
+	####### Updates the velocity ######
 	player.velocity.y += player.gravity * delta
 	player.move_and_slide()
 	

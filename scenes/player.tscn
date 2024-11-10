@@ -64,11 +64,6 @@ script = ExtResource("6_3doy8")
 [node name="Falling" type="Node" parent="State Machine"]
 script = ExtResource("7_68ynd")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
-limit_left = 0
-limit_top = 0
-limit_right = 640
-limit_bottom = 320
+[node name="Stick_To_Wall" type="Node" parent="State Machine"]
 
 [connection signal="timeout" from="Sprite2D/Wall_Detection/Timer" to="Sprite2D/Wall_Detection" method="_on_timer_timeout"]
