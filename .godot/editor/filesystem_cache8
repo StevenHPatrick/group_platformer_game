@@ -1,28 +1,69 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730579204
-README.md::TextFile::-1::1728936442::0::1::::<><>::
-::res://assests/::1730208693
-icon.png::CompressedTexture2D::8722525264202763665::1730208693::1730579204::1::::<><>::
-icon.svg::CompressedTexture2D::5220523963740535804::1730208693::1730579204::1::::<><>::
-::res://scenes/::1730209469
-platform.tscn::PackedScene::7081042329153749134::1730208723::0::1::::<><>::uid://cgm4jcungo3xo::::res://assests/icon.svg
-platform_sticky.tscn::PackedScene::5737890204444272583::1730208723::0::1::::<><>::uid://cgm4jcungo3xo::::res://assests/icon.svg
-player.tscn::PackedScene::1874306395738965061::1730209469::0::1::::<><>::res://scripts/player/player.gd<>uid://cgm4jcungo3xo::::res://assests/icon.svg<>res://scripts/states/state_machine.gd<>res://scripts/player/wall_detect_controller.gd<>res://scripts/states/player/player_idle.gd<>res://scripts/states/player/player_running.gd<>res://scripts/states/player/player_jumping.gd<>res://scripts/states/player/player_falling.gd
-wall_detection.tscn::PackedScene::7681713070411925964::1730208723::0::1::::<><>::res://scripts/player/wall_detect_controller.gd
-world.tscn::PackedScene::6049126074187564155::1730208723::0::1::::<><>::uid://1x6s1xnjkl70::::res://scenes/player.tscn<>uid://c75dy55ol7i83::::res://scenes/platform.tscn
-::res://scripts/::1728964923
-::res://scripts/enemy/::1728964900
-::res://scripts/objects/::1728964914
-::res://scripts/player/::1730208693
-player.gd::GDScript::-1::1730208693::0::1::::Player<>CharacterBody2D<>::
-wall_detect_controller.gd::GDScript::-1::1730172156::0::1::::<>Node2D<>::
-wall_detect_raycasts.gd::GDScript::-1::1729820410::0::1::::<>RayCast2D<>::
-::res://scripts/states/::1729228460
-state.gd::GDScript::-1::1729228418::0::1::::State<>Node<>::
-state_machine.gd::GDScript::-1::1729227867::0::1::::State_Machine<>Node<>::
-::res://scripts/states/player/::1730209469
-player_falling.gd::GDScript::-1::1730209444::0::1::::<>PlayerState<>::
-player_idle.gd::GDScript::-1::1729231927::0::1::::<>PlayerState<>::
-player_jumping.gd::GDScript::-1::1730209469::0::1::::<>PlayerState<>::
-player_running.gd::GDScript::-1::1730209375::0::1::::<>PlayerState<>::
-player_state.gd::GDScript::-1::1729228418::0::1::::PlayerState<>State<>::
+::res://::1731267087
+README.md::TextFile::-1::1729551243::0::1::::<><>::
+::res://assests/::1731266997
+icon.png::CompressedTexture2D::8722525264202763665::1730228746::1731267088::1::::<><>::
+icon.svg::CompressedTexture2D::5220523963740535804::1730228746::1731267088::1::::<><>::
+::res://assests/enemies/::1731266834
+air_elemental.png::CompressedTexture2D::3781797041810112210::1730228746::1731267088::1::::<><>::
+land_elemental.png::CompressedTexture2D::1363743977170553858::1730228746::1731267088::1::::<><>::
+sea_elemental.png::CompressedTexture2D::5760218077961825298::1730228746::1731267088::1::::<><>::
+::res://assests/player/::1731266997
+animated_sprite.tscn::PackedScene::3832004439681609691::1731266997::0::1::::<><>::uid://bofy1xnwhbg2p::::res://assests/player/spritesheets/idle1.png<>uid://c87g58th7c8py::::res://assests/player/spritesheets/move.png<>uid://byjwfmmwqycvx::::res://assests/player/spritesheets/jump.png<>uid://boaao4ap01peu::::res://assests/player/spritesheets/swallow.png<>uid://dswsplqq25fm8::::res://assests/player/spritesheets/die.png
+::res://assests/player/spritesheets/::1731266834
+die.png::CompressedTexture2D::8469197843169526381::1730228746::1731267088::1::::<><>::
+hit.png::CompressedTexture2D::7102308972033390248::1730228746::1731267088::1::::<><>::
+idle1.png::CompressedTexture2D::3380891250992267317::1730228746::1731267088::1::::<><>::
+idle2.png::CompressedTexture2D::6476836190526656253::1730228746::1731267088::1::::<><>::
+idle3.png::CompressedTexture2D::4247136287564054581::1730228746::1731267088::1::::<><>::
+jump.png::CompressedTexture2D::4090877683442564713::1730228746::1731267088::1::::<><>::
+move.png::CompressedTexture2D::7155552934327695946::1730228746::1731267088::1::::<><>::
+swallow.png::CompressedTexture2D::3369091019633356312::1730228746::1731267088::1::::<><>::
+::res://assests/temp tilesets/::1731266997
+temp_tiles.png::CompressedTexture2D::7545763967295586733::1731266997::1731267088::1::::<><>::
+temp_tile_resource.tres::TileSet::7728703295798103488::1731266997::0::1::::<><>::uid://dfrhvond48sdh::::res://assests/temp tilesets/temp_tiles.png
+::res://assests/temp tilesets/autumn forest/::1731266997
+Autumn_entities (16 x 16).png::CompressedTexture2D::7268741801507274137::1731266997::1731267088::1::::<><>::
+Terrain (16 x 16).png::CompressedTexture2D::8492439463862549456::1731266997::1731267088::1::::<><>::
+::res://assests/temp tilesets/autumn forest/background parts/::1731266997
+_Complete_static_BG_(288 x 208).png::CompressedTexture2D::2268319984577114772::1731266997::1731267088::1::::<><>::
+1 - Leaf_top.png::CompressedTexture2D::6900525886792168809::1731266997::1731267088::1::::<><>::
+2 - Trees.png::CompressedTexture2D::8103157700244221666::1731266997::1731267088::1::::<><>::
+3 - Bottom_leaf_piles.png::CompressedTexture2D::2555559487153548168::1731266997::1731267088::1::::<><>::
+4 - Tree_row_BG_1.png::CompressedTexture2D::1418906044215443348::1731266997::1731267088::1::::<><>::
+5 - Tree_row_BG_2.png::CompressedTexture2D::4006274480403143312::1731266997::1731267088::1::::<><>::
+6 - Distant_trees.png::CompressedTexture2D::3443285913152122701::1731266997::1731267088::1::::<><>::
+::res://assests/temp tilesets/misc. universal tiles/::1731266997
+Blocks (16 x 16).png::CompressedTexture2D::2098834296432524080::1731266997::1731267088::1::::<><>::
+Bubbling_Oil_frames (16 x 32).png::CompressedTexture2D::6175906894046146043::1731266997::1731267088::1::::<><>::
+Flowers (16 x 16).png::CompressedTexture2D::6591692609853460661::1731266997::1731267088::1::::<><>::
+House (112 x 96).png::CompressedTexture2D::3832006578399851048::1731266997::1731267088::1::::<><>::
+Lava_frames (16 x 32).png::CompressedTexture2D::5086146751857346716::1731266997::1731267088::1::::<><>::
+Metal_Wire_fence (16 x 16).png::CompressedTexture2D::5150705429133232265::1731266997::1731267088::1::::<><>::
+Rock_shape (16 x 16).png::CompressedTexture2D::5896002220252167572::1731266997::1731267088::1::::<><>::
+Snack_machine_Bench_Trash_bin (16 x 16).png::CompressedTexture2D::3912072029935674320::1731266997::1731267088::1::::<><>::
+Water_frames (16 x 32).png::CompressedTexture2D::361322076103067760::1731266997::1731267088::1::::<><>::
+::res://scenes/::1731267070
+platform.tscn::PackedScene::7081042329153749134::1730228746::0::1::::<><>::uid://cgm4jcungo3xo::::res://assests/icon.svg
+platform_sticky.tscn::PackedScene::5737890204444272583::1730228746::0::1::::<><>::uid://cgm4jcungo3xo::::res://assests/icon.svg
+player.tscn::PackedScene::1874306395738965061::1731267070::0::1::::<><>::res://scripts/player/player.gd<>uid://cgm4jcungo3xo::::res://assests/icon.svg<>res://scripts/states/state_machine.gd<>res://scripts/player/wall_detect_controller.gd<>res://scripts/states/player/player_idle.gd<>res://scripts/states/player/player_running.gd<>res://scripts/states/player/player_jumping.gd<>res://scripts/states/player/player_falling.gd
+wall_detection.tscn::PackedScene::7681713070411925964::1730085934::0::1::::<><>::res://scripts/player/wall_detect_controller.gd
+world.tscn::PackedScene::6049126074187564155::1731266997::0::1::::<><>::uid://1x6s1xnjkl70::::res://scenes/player.tscn<>uid://c75dy55ol7i83::::res://scenes/platform.tscn<>uid://did3u450oxpvc::::res://assests/temp tilesets/temp_tile_resource.tres
+::res://scenes/enemies/::1730228746
+AirElemental.tscn::PackedScene::4023311001239425266::1730228746::0::1::::<><>::uid://bt46v6lkf4rvm::::res://assests/enemies/air_elemental.png
+LandElemental.tscn::PackedScene::985867145287000272::1730228746::0::1::::<><>::uid://touwtwfj8l2i::::res://assests/enemies/land_elemental.png
+SeaElemental.tscn::PackedScene::8276497712565068068::1730228746::0::1::::<><>::uid://cocj7knksvcra::::res://assests/enemies/sea_elemental.png
+::res://scripts/::1729551243
+::res://scripts/player/::1730228746
+player.gd::GDScript::-1::1730228746::0::1::::Player<>CharacterBody2D<>::
+wall_detect_controller.gd::GDScript::-1::1730228746::0::1::::<>Node2D<>::
+wall_detect_raycasts.gd::GDScript::-1::1729825525::0::1::::<>RayCast2D<>::
+::res://scripts/states/::1729551243
+state.gd::GDScript::-1::1729551243::0::1::::State<>Node<>::
+state_machine.gd::GDScript::-1::1729551243::0::1::::State_Machine<>Node<>::
+::res://scripts/states/player/::1731267010
+player_falling.gd::GDScript::-1::1731267010::0::1::::<>PlayerState<>::
+player_idle.gd::GDScript::-1::1730228746::0::1::::<>PlayerState<>::
+player_jumping.gd::GDScript::-1::1731267010::0::1::::<>PlayerState<>::
+player_running.gd::GDScript::-1::1731267010::0::1::::<>PlayerState<>::
+player_state.gd::GDScript::-1::1730228746::0::1::::PlayerState<>State<>::
