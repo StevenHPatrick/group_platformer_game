@@ -22,6 +22,9 @@ window/size/viewport_height=320
 
 [layer_names]
 
+2d_physics/layer_1="Solid"
+2d_physics/layer_2="Layer 2"
+2d_physics/layer_5="Liquid"
 2d_physics/size/viewport_height=320
 2d_physics/size/viewport_width=640
 
