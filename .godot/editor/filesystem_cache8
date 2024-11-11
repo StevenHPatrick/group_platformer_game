@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731270297
+::res://::1731349665
 README.md::TextFile::-1::1729551243::0::1::::<><>::
 ::res://assests/::1731267246
 icon.png::CompressedTexture2D::8722525264202763665::1730228746::1731267088::1::::<><>::
@@ -19,10 +19,10 @@ idle3.png::CompressedTexture2D::4247136287564054581::1730228746::1731267088::1::
 jump.png::CompressedTexture2D::4090877683442564713::1730228746::1731267088::1::::<><>::
 move.png::CompressedTexture2D::7155552934327695946::1730228746::1731267088::1::::<><>::
 swallow.png::CompressedTexture2D::3369091019633356312::1730228746::1731267088::1::::<><>::
-::res://assests/temp tilesets/::1731270297
-platformer_tiles (Rvros).png::CompressedTexture2D::4107335587042486663::1731270255::1731270297::1::::<><>::
+::res://assests/temp tilesets/::1731270858
+platformer_tiles (Rvros).png::CompressedTexture2D::4107335587042486663::1731270858::1731349666::1::::<><>::
 temp_tiles.png::CompressedTexture2D::7545763967295586733::1731267246::1731270109::1::::<><>::
-temp_tile_resource.tres::TileSet::7728703295798103488::1731267246::0::1::::<><>::uid://dfrhvond48sdh::::res://assests/temp tilesets/temp_tiles.png
+temp_tile_resource.tres::TileSet::7728703295798103488::1731270858::0::1::::<><>::uid://byrvhm5ees37h::::res://assests/temp tilesets/platformer_tiles (Rvros).png<>uid://dfrhvond48sdh::::res://assests/temp tilesets/temp_tiles.png
 ::res://assests/temp tilesets/autumn forest/::1731270109
 Autumn_entities (16 x 16).png::CompressedTexture2D::7268741801507274137::1731267246::1731270109::1::::<><>::
 Terrain (16 x 16).png::CompressedTexture2D::8492439463862549456::1731267246::1731270109::1::::<><>::
@@ -44,12 +44,12 @@ Metal_Wire_fence (16 x 16).png::CompressedTexture2D::5150705429133232265::173126
 Rock_shape (16 x 16).png::CompressedTexture2D::5896002220252167572::1731267246::1731270109::1::::<><>::
 Snack_machine_Bench_Trash_bin (16 x 16).png::CompressedTexture2D::3912072029935674320::1731267246::1731270109::1::::<><>::
 Water_frames (16 x 32).png::CompressedTexture2D::361322076103067760::1731267246::1731270109::1::::<><>::
-::res://scenes/::1731267246
+::res://scenes/::1731270810
 platform.tscn::PackedScene::7081042329153749134::1731267116::0::1::::<><>::uid://cgm4jcungo3xo::::res://assests/icon.svg
 platform_sticky.tscn::PackedScene::5737890204444272583::1731267116::0::1::::<><>::uid://cgm4jcungo3xo::::res://assests/icon.svg
 player.tscn::PackedScene::1874306395738965061::1731267246::0::1::::<><>::res://scripts/player/player.gd<>uid://cgm4jcungo3xo::::res://assests/icon.svg<>res://scripts/states/state_machine.gd<>res://scripts/player/wall_detect_controller.gd<>res://scripts/states/player/player_idle.gd<>res://scripts/states/player/player_running.gd<>res://scripts/states/player/player_jumping.gd<>res://scripts/states/player/player_falling.gd
 wall_detection.tscn::PackedScene::7681713070411925964::1731267116::0::1::::<><>::res://scripts/player/wall_detect_controller.gd
-world.tscn::PackedScene::6049126074187564155::1731267246::0::1::::<><>::uid://1x6s1xnjkl70::::res://scenes/player.tscn<>uid://c75dy55ol7i83::::res://scenes/platform.tscn<>uid://did3u450oxpvc::::res://assests/temp tilesets/temp_tile_resource.tres
+world.tscn::PackedScene::6049126074187564155::1731270810::0::1::::<><>::uid://1x6s1xnjkl70::::res://scenes/player.tscn<>uid://c75dy55ol7i83::::res://scenes/platform.tscn<>uid://did3u450oxpvc::::res://assests/temp tilesets/temp_tile_resource.tres
 ::res://scenes/enemies/::1730228746
 AirElemental.tscn::PackedScene::4023311001239425266::1730228746::0::1::::<><>::uid://bt46v6lkf4rvm::::res://assests/enemies/air_elemental.png
 LandElemental.tscn::PackedScene::985867145287000272::1730228746::0::1::::<><>::uid://touwtwfj8l2i::::res://assests/enemies/land_elemental.png
