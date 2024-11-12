@@ -1,2 +1,11 @@
-res://scenes/world.tscn
 res://assests/temp tilesets/temp_tile_resource.tres
+res://scenes/ui/level_title.tscn
+res://scripts/ui/level_title.tscn
+res://scenes/ui/level_title.gd
+res://scenes/world.tscn
+res://scripts/world.gd
+res://scenes/player.tscn
+res://scenes/platform.tscn
+res://scenes/platform_sticky.tscn
+res://scenes/wall_detection.tscn
+res://scripts/ui/level_title.gd

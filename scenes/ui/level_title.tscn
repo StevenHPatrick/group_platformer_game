@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfpf2au46i3dn"]
+
+[ext_resource type="Script" path="res://scripts/ui/level_title.gd" id="1_2sehc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7lsmv"]
+font_size = 28
+
+[node name="LevelTitle" type="CanvasLayer" node_paths=PackedStringArray("component", "label")]
+script = ExtResource("1_2sehc")
+component = NodePath("Main")
+label = NodePath("Main/Label")
+
+[node name="Main" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 320.0
+
+[node name="Background" type="ColorRect" parent="Main"]
+z_index = 3999
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="Main"]
+z_index = 4000
+layout_mode = 2
+offset_left = 280.0
+offset_top = 140.0
+offset_right = 359.0
+offset_bottom = 179.0
+text = "LEVEL"
+label_settings = SubResource("LabelSettings_7lsmv")
+horizontal_alignment = 1
+vertical_alignment = 1

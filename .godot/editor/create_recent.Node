@@ -1,3 +1,10 @@
+Control
+ColorRect
+CenterContainer
+Label
+RichTextLabel
+Container
+CanvasLayer
 Node
 Timer
 Node2D
@@ -5,6 +12,3 @@ Area2D
 CollisionShape2D
 StaticBody2D
 RayCast2D
-Camera2D
-Sprite2D
-CharacterBody2D
